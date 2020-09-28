@@ -63,6 +63,19 @@ namespace Lecture4
 			while (!stack.IsEmpty()) {
 				Console.WriteLine(stack.Pop());
 			}
+			//person c
+			Person c = new Person();
+			c.firstName = "John";
+			c.lastName = "Smith";
+			c.age = 99;
+
+			list.Add(c);
+			Console.WriteLine();
+			Console.WriteLine("List count: " + list.Count());
+			Console.WriteLine("Person c:");
+			Console.WriteLine(list.Get(2).firstName);
+			Console.WriteLine(list.Get(2).lastName);
+			Console.WriteLine(list.Get(2).age);
 
 			Console.ReadKey();
 		}
